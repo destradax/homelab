@@ -6,7 +6,7 @@ add to `/etc/hosts` so you can `ssh odin@athena`:
 192.168.1.2 athena
 ```
 
-# Instal nvim
+# Setup nvim
 
 install from https://github.com/neovim/neovim/blob/master/INSTALL.md#linux
 
@@ -21,6 +21,10 @@ and then select the editor:
 ```sh
 select-editor
 ```
+
+install lazy.nvim: https://lazy.folke.io/installation
+
+copy [nvim folder](./nvim/) to `~/.config/` 
 
 # Install Docker
 
