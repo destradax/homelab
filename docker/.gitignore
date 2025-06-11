@@ -1,0 +1,9 @@
+# Ignore everyting
+*
+
+# Except for
+!.gitignore
+!**/compose.yml
+
+# ...even if they are in subdirectories
+!*/

@@ -1,0 +1,16 @@
+# docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:lts
+
+services:
+  portainer:
+    image: portainer/portainer-ce:lts
+    container_name: portainer
+    restart: always
+    ports:
+      - "8000:8000" # Edge agent
+      - "9443:9443" # HTTPS Web UI
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      #- portainer_data:/data
+      - ./data:/data
+# volumes:
+# portainer_data:
